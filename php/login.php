@@ -8,7 +8,8 @@
     $pass = md5($pass.$PASSWORD_ENCODE_SUGAR);
   }
 
-  $mysql = new mysqli('localhost', 'root', 'root', 'books');
+  $mysql = new mysqli($DB_ADDRESS, $DB_USER, $DB_PASWORD, $DB_NAME);
+
   if($mysql) {
     $result = $mysql->query("SELECT * FROM `$USERS_TABLE` WHERE `$LOGIN_COLUMN` = '$login' AND `$PASSWORD_COLUMN` = '$pass'");
     $user = $result->fetch_assoc();

@@ -1,4 +1,8 @@
 <?php
+  $GLOBALS['DB_ADDRESS'] = "localhost";
+  $GLOBALS['DB_USER'] = "root";
+  $GLOBALS['DB_PASSWORD'] = "root";
+  $GLOBALS['DB_NAME'] = "books";
   $GLOBALS['TEXT_DIR'] = "C:\\Server\\data\\texts\\";
   $GLOBALS['HTDOCS_DIR'] = "books/";
   $GLOBALS['COOKIE_TIME'] = 3600 * 24 * 365;
