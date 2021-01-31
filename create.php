@@ -36,28 +36,24 @@
       ?>
       
       <?php else: ?>
-        <div class="container mt-4">
-          <div class="row">
-            <div class="col">
+          <div class="input-text">
               <form method="POST">
-                <textarea class="form-control" id="text" name="text"><?php if (isset($_POST['text'])) { echo $_POST['text']; }?></textarea><br>
+                <textarea class="form-control" id="text" name="text" rows="20" placeholder="Введите текст сюда..."><?php if (isset($_POST['text'])) { echo $_POST['text']; }?></textarea><br>
                 <div class="row">
                   <div class="col">
-                    <button class="btn btn-secondary" type="submit" name="preview" value='1'>Предпросмотр</button>
+                    <button class="btn btn-secondary btn-preview" type="submit" name="preview" value='1'>Предпросмотр</button>
                   </div>
                   <div class="col">
-                    <button class="btn btn-primary" type="submit" name="save" value='1'>Сохранить</button>
+                    <button class="btn btn-primary btn-save" type="submit" name="save" value='1'>Сохранить</button>
                   </div>
                 </div>
               </form>
-            </div>
-            <div class="col">
+			</div>
+            <div class="output-text">
               <?php
                 if (isset($_POST['text'])) { echo $parsedown->text($_POST['text']); }
               ?>
             </div>
-          </div>
-        </div>
       <?php endif; ?>
     </div>
   </body>

@@ -17,18 +17,17 @@
       <?php
         if (!isset($_COOKIE['user'])):
       ?>
-      <h1>Авторизация</h1>
+      <h1 align="center">Авторизация</h1>
+	  <p>Для авторизации вам нужно вбить пару логин/пароль любого из ваших активных персонажей.</p>
       <form action="php/login.php" method="POST">
         <input type="text" class="form-control" name="login" id="login" placeholder="Логин"><br>
         <input type="password" class="form-control" name="pass" id="pass" placeholder="Пароль"><br>
-        <div class="col">
-          <button class="btn btn-primary" type="submit">Войти</button>
-        </div>
+        <button class="btn btn-primary" type="submit">Войти</button>
       </form>
 
       <?php else: ?>
-        <p><a href="php/exit.php">Выйти</a></p>
-        <a href="create.php">Создать документ</a>
+		<a href="php/exit.php" class="btn btn-primary main-button">Выйти</a>
+		<a href="create.php" class="btn btn-primary main-button">Создать документ</a>
       <?php endif; ?>
     </div>
   </body>
