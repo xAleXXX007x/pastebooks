@@ -4,7 +4,6 @@
   $GLOBALS['DB_PASSWORD'] = "";
   $GLOBALS['DB_NAME'] = "users";
   $GLOBALS['TEXT_DIR'] = "C:\\xampp\\data\\texts\\";
-  $GLOBALS['HTDOCS_DIR'] = "books/";
   $GLOBALS['COOKIE_TIME'] = 3600 * 24 * 365;
   $GLOBALS['USERS_TABLE'] = "users";
   $GLOBALS['LOGIN_COLUMN'] = "user_login";
